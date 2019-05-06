@@ -5,7 +5,7 @@ title: KnowledgeConf 2019. Впечатления и отчет
 
 Отчет по докладам с конференции KnowledgeConf 2019 (24.04.2019). 
 
-[Сайт](https://knowledgeconf.ru/2019) | [Тезисы](https://knowledgeconf.ru/2019/abstracts) | [Tg](https://t.me/KnowledgeConfTalks) | [Конспекты](https://github.com/docops-hq/conf/tree/master/knowledgeconf/19)
+[Сайт](https://knowledgeconf.ru/2019)&nbsp;|&nbsp;[Тезисы](https://knowledgeconf.ru/2019/abstracts)&nbsp;|&nbsp;[Tg](https://t.me/KnowledgeConfTalks)&nbsp;|&nbsp;[Конспекты](https://github.com/docops-hq/conf/tree/master/knowledgeconf/19)  
 
 **Ключевые слова**: матрица компетенций, скиллсет, роль, onboarding, адаптация новых сотрудников, e-learning, knowledge sharing, обмен знаниями, мотивация, обучение, reuse, не изобретаем велосипед, компетенции, performance review  
 **Кому может быть интересно**: тимлидам, HR, project manager, техническому писателю, руководителю технической поддержки, руководителю QA  
@@ -43,7 +43,7 @@ title: KnowledgeConf 2019. Впечатления и отчет
 
 ### Доклад 1: Холистическое управление знаниями в IТ-компании
 
-[Тезисы](https://knowledgeconf.ru/2019/abstracts/4918) | Оценка: 8/10 | Компания: КРОК
+[Тезисы](https://knowledgeconf.ru/2019/abstracts/4918)&nbsp;|&nbsp;Оценка: 8/10&nbsp;|&nbsp;Компания: КРОК    
 
 **Чем впечатлил**: очень крутая корпоративная система, мотивация вовлеченности сотрудников, хорошая структура доклада
 **Что не понравилось**:  вставки из Игры престолов не к месту (может потому что я не фанат), сомнительные идеи по геймификации
@@ -122,7 +122,7 @@ title: KnowledgeConf 2019. Впечатления и отчет
 
 ### Доклад 2: Применение практик Тиаго Форте для управления своими знаниями
 
-[Тезисы](https://knowledgeconf.ru/2019/abstracts/4755) | Оценка: 6/10 | [Конспект](https://github.com/docops-hq/conf/blob/master/knowledgeconf/19/tiago-forte-practices.md) | Компания: [Express42](https://express42.com/)
+[Тезисы](https://knowledgeconf.ru/2019/abstracts/4755)&nbsp;|&nbsp;Оценка: 6/10&nbsp;|&nbsp;[Конспект](https://github.com/docops-hq/conf/blob/master/knowledgeconf/19/tiago-forte-practices.md)&nbsp;|&nbsp;Компания: [Express42](https://express42.com/)
 
 **Что не понравилось**:  управлением знаниями это назвать нельзя, скорее управление информацией речь только про текст (книги, статьи)
 
@@ -139,7 +139,7 @@ title: KnowledgeConf 2019. Впечатления и отчет
 
 ### Доклад 3: Performance Review и выявление тайного знания
 
-[Тезисы](https://knowledgeconf.ru/2019/abstracts/4695) | Оценка: 9/10 
+[Тезисы](https://knowledgeconf.ru/2019/abstracts/4695)&nbsp;|&nbsp;Оценка: 9/10 
 
 **Что понравилось**:  больная проблема, хорошая структура, конкретные идеи
 
@@ -178,7 +178,7 @@ title: KnowledgeConf 2019. Впечатления и отчет
 
 ### Доклад 4: Разработка базы знаний компании, которой действительно пользуются
 
-[Тезисы](https://knowledgeconf.ru/2019/abstracts/4815) |  Оценка: 9/10 
+[Тезисы](https://knowledgeconf.ru/2019/abstracts/4815)&nbsp;|&nbsp;Оценка: 9/10  
 
 **Что понравилось**: идея доступа по ролям, выявление важных проблем, больная тема :). Интересные слайды. Очень классная фишка с графами и облаками тегов. Например, могут выявлять аномальные теги, выявлять связи между тегами, статьями. Очень круто (можно слайды посмотреть)
 
@@ -211,13 +211,13 @@ title: KnowledgeConf 2019. Впечатления и отчет
 
 ### Доклад 5: Как я 15 лет делал себе персональную Wiki для программиста
 
-[Тезисы](https://knowledgeconf.ru/2019/abstracts/4431) | Оценка: 5/10 | [Конспект](https://github.com/docops-hq/conf/blob/master/knowledgeconf/19/xi-notes-for-developer.md)
+[Тезисы](https://knowledgeconf.ru/2019/abstracts/4431)&nbsp;|&nbsp;Оценка: 5/10&nbsp;|&nbsp;[Конспект](https://github.com/docops-hq/conf/blob/master/knowledgeconf/19/xi-notes-for-developer.md)
 
 Не конспектировала, потому что обедала вкусняшками, пропустила первые 15 мин. Техническое описание, как чел для себя велосипед изобретал. Но возможно кому-то будет полезно.
 
 ### Доклад 6: Трудно быть Колей: теория и практика knowledge sharing в Lamoda
 
-[Тезисы](https://knowledgeconf.ru/2019/abstracts/4905) | Оценка: 8/10 
+[Тезисы](https://knowledgeconf.ru/2019/abstracts/4905)&nbsp;|&nbsp;Оценка: 8/10 
 
 **Что понравилось**:  рассказ про бедолагу Колю хорошо иллюстрирует, где ИТ-отдел спотыкался об необходимость обмена знаниями и документирования. Местами смешно и поучительно.
 
@@ -261,7 +261,7 @@ title: KnowledgeConf 2019. Впечатления и отчет
 
 ### Доклад 7: Не хочешь мокнуть – плыви: добровольно-принудительный обмен знаниями 
 
-[Тезисы](https://knowledgeconf.ru/2019/abstracts/4956) | Оценка: 7/10 
+[Тезисы](https://knowledgeconf.ru/2019/abstracts/4956)&nbsp;|&nbsp;Оценка: 7/10 
 
 **Что понравилось**:  про мотивацию, два подхода, хорошее заключение
 
@@ -312,7 +312,7 @@ title: KnowledgeConf 2019. Впечатления и отчет
 
 ### Доклад 8: Адаптационный чек-лист как инструмент мягкого введения в должность
 
-[Тезисы](https://knowledgeconf.ru/2019/abstracts/4941) | Оценка: 5/10
+[Тезисы](https://knowledgeconf.ru/2019/abstracts/4941)&nbsp;|&nbsp;Оценка: 5/10
 
 **Что не понравилось**:  очень много воды, повторение по пять раз одного и того же, скорее подойдет HR, мало собственно про знания
 
@@ -351,7 +351,7 @@ title: KnowledgeConf 2019. Впечатления и отчет
 
 ### Доклад 9: Естественное развитие: как перейти от e-learning к управлению знаниями
 
-[Тезисы](https://knowledgeconf.ru/2019/abstracts/4816) | Оценка: 6/10 | [Конспект](https://github.com/docops-hq/conf/blob/master/knowledgeconf/19/e-learning.md)
+[Тезисы](https://knowledgeconf.ru/2019/abstracts/4816)&nbsp;|&nbsp;Оценка: 6/10&nbsp;|&nbsp;[Конспект](https://github.com/docops-hq/conf/blob/master/knowledgeconf/19/e-learning.md)
 **Что понравилось**: ответы на вопросы, основная идея.
 
 **Что могло бы быть лучше**: слайды так себе, не хватает структуры, хотелось бы немножко живых примеров курсов.
