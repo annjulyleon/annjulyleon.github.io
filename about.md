@@ -26,5 +26,5 @@ Finally, I'm an English learner and I'm aiming for CAE certificate. So my blog i
 
 ## Contact me
 
-[aj.leonova@gmail.com](mailto:aj.leonova@gmail.com)
+[aj.leonova@gmail.com](mailto:aj.leonova@gmail.com)  
 [Telegram](https://t.me/annjulyleon)
