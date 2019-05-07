@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Markdown в DOCX и PDF с ГОСТ
+tags: docops powershell
 ---
 
 Набор скриптов PowerShell для конвертации Markdown > DOCX и PDF, разработанный и собранный @iaaras ([gitlab](https://gitlab.iaaras.ru/iaaras/gostdown)). 
@@ -66,3 +67,8 @@ title: Markdown в DOCX и PDF с ГОСТ
 А если вы используете редактор [Typora](https://typora.io/), то можно воспользоваться меню Файл > Импорт. Typora все сделает сама (но ей все равно нужен установленный pandoc).
 
 
+<small>
+    {% for tag in page.tags %}
+    <a href="/tags/{{ tag }}/">{{ tag }}</a>
+    {% endfor %}
+</small>

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Selenium. Стандартные решения
+tags: selenium qa
 ---
 
 Selenium - расширение для браузера Mozilla Firefox, позволяющее записывать действия пользователя в браузере (переходы по ссылкам, нажатие кнопок), а затем воспроизводить их. Удобно использовать для тестирования и для автоматизации рутинных действий.
@@ -216,3 +217,9 @@ verifyText | //td[6] | javascript{storedVars['categories'][storedVars['myVar']]}
 getEval | myItems++; |
 endWhile
 ```
+
+<small>
+    {% for tag in page.tags %}
+    <a href="/tags/{{ tag }}/">{{ tag }}</a>
+    {% endfor %}
+</small>
