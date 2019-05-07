@@ -205,8 +205,3 @@ letsencrypt renew
 sudo letsencrypt renew --dry-run --agree-tos
 ```
 
-<small>
-    {% for tag in page.tags %}
-    <a href="/tags/{{ tag }}/">{{ tag }}</a>
-    {% endfor %}
-</small>

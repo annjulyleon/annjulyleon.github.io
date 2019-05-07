@@ -217,9 +217,3 @@ verifyText | //td[6] | javascript{storedVars['categories'][storedVars['myVar']]}
 getEval | myItems++; |
 endWhile
 ```
-
-<small>
-    {% for tag in page.tags %}
-    <a href="/tags/{{ tag }}/">{{ tag }}</a>
-    {% endfor %}
-</small>

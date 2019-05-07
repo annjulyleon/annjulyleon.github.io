@@ -66,9 +66,3 @@ tags: docops powershell
 
 А если вы используете редактор [Typora](https://typora.io/), то можно воспользоваться меню Файл > Импорт. Typora все сделает сама (но ей все равно нужен установленный pandoc).
 
-
-<small>
-    {% for tag in page.tags %}
-    <a href="/tags/{{ tag }}/">{{ tag }}</a>
-    {% endfor %}
-</small>

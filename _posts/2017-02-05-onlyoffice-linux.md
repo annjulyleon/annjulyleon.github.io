@@ -171,8 +171,3 @@ documentserver-generate-allfonts.sh
 
 Для проброса серверов наружу я использовала прокси-сервер (nginx reverse proxy), на который уже можно поставить валидные красивые зелененькие SSL сертификаты от letsencrypt.
 
-<small>
-    {% for tag in page.tags %}
-    <a href="/tags/{{ tag }}/">{{ tag }}</a>
-    {% endfor %}
-</small>

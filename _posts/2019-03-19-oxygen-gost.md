@@ -47,8 +47,3 @@ tags: docops oxygenxml
 В собранном документе и в файлах исходника проекта.  
 [Пример собранного документа в PDF](https://github.com/annjulyleon/oxy-gost/blob/master/project/out/pdf-css-html5/rd-13.pdf).
 
-<small>
-    {% for tag in page.tags %}
-    <a href="/tags/{{ tag }}/">{{ tag }}</a>
-    {% endfor %}
-</small>
