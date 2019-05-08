@@ -86,9 +86,17 @@ title: jekyll-now для персонального блога
 Небольшой гайд для чайников про запуск своего блога на [GitHub Pages](https://pages.github.com/), несколько полезных твиков для добавления в блог архива, тегов и новых иконок.
 ```
 
-
-
 Текст поста набран на языке разметки markdown (см. [шпаргалку на русском](https://github.com/sandino/Markdown-Cheatsheet)). Можно редактировать текст прямо в интерфейсе GitHub или сначала писать их с помощью любого Markdown редактора, например [Typora](https://typora.io/), [Joplin](https://joplinapp.org/), [плагины для Atom](https://atom.io/packages/markdown-preview) и [IDEA](https://plugins.jetbrains.com/plugin/7793-markdown-support) и тысячи их.
+
+Кстати, если вы хотите написать что-то про сам jekyll, то вам придется делать вставки кода liquid, который jekyll попытается интерпретировать. Поэтому, перед вставкой кода вида {% raw %} `{% whatever %}` {% endraw %} пишите блоки: raw/endraw, вот так:
+
+{% raw %}
+```
+{% raw %}
+	{% whatever %}
+{% endraw %}
+```
+{% endraw %}
 
 <a id="addicon" />
 
