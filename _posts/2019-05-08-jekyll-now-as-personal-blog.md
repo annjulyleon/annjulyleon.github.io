@@ -113,11 +113,11 @@ SOMENAME - название вашей иконки/соцсети. Вставь
 Например, [здесь](https://github.com/annjulyleon/annjulyleon.github.io/blob/master/_sass/_svg-icons.scss) две последние строки - для добавления иконок blogger.com и Telegram.
 
 Теперь, чтобы отобразить иконки на страницах блога, нужно отредактировать файл `_includes/svg-icons.html`, добавив в него строки вида:
-
+{% raw %}
 ```html
-<!-- prettier-ignore -->
 {% if site.footer-links.SOMENAME %}<a href="your LINK here/{{ site.footer-links.SOMENAME }}"><i class="svg-icon SOMENAME"></i></a>{% endif %}
 ```
+{% endraw %}
 
 где SOMENAME - имя иконки, которое вы назначили на предыдущем шаге, а <your LINK here> - базовая ссылка (t.me для телеграм, blogger.com и т.д.). См. [пример](<https://github.com/annjulyleon/annjulyleon.github.io/blob/master/_includes/svg-icons.html>).
 
@@ -135,9 +135,8 @@ SOMENAME: /yourname
 Нужно добавить страницу со списком постов (например, [вот такую](https://annjulyleon.github.io/archive/)) по годам с датами. Вот [гайд](http://chris.house/blog/building-a-simple-archive-page-with-jekyll/) на английском языке.
 
 Добавьте в корень репозитория файл archive.html и скопируйте содержимое:
-
+{% raw %}
 ```html
-<!-- prettier-ignore -->
 ---
 layout: page
 title: Archive
@@ -158,6 +157,7 @@ permalink: /archive/
    {% endfor %}
 </section>
 ```
+{% endraw %}
 
 Затем нужно добавить эту страницу в навигацию блога. Для этого откройте файл `/_layouts/default.html` и найдите секцию <nav> . Добавить страницу:
 
@@ -192,9 +192,8 @@ tags: docops jekyll
 
 
 Затем нужно вывести теги для каждого поста на странице. Мне нравится выводить их перед текстом, сразу после даты, кому-то больше нравится в конце, после поста. В файл `/_layouts/post.html/` нужно в начало или конец файла добавить секцию с тегами (секция <small> ниже). Я добавила в секцию с отображением даты (прямо перед <div class="entry">):
-
+{% raw %}
 ```html
-<!-- prettier-ignore -->
 <div class="date">
     Written on {{ page.date | date: "%B %e, %Y" }}
 	<br />
@@ -205,11 +204,10 @@ tags: docops jekyll
   </small>
 </div> 
 ```
-
+{% endraw %}
 Теперь нужно создать страницы для каждого тега. на каждой страницы будут перечислены все посты с тегом. Создадим файл `_layouts/tagpage.html` и добавим содержимое:
-
+{% raw %}
 ```html
-<!-- prettier-ignore -->
 ---
 layout: page # This template inherits from my basic page template
 ---
@@ -226,7 +224,7 @@ This will be the title -->
     {% endfor %}
 </ul>
 ```
-
+{% endraw %}
 
 
 Теперь создадим папку `/tags` в репозитории и для каждого тега создадим файл `<имя тега>.md`. В файле только начальная секция с именем тега:
@@ -242,7 +240,7 @@ tag: jekyll
 
 Теперь добавим на главную страницу облако тегов. Для этого отредактируем index.html, добавив в начало или в конец (как вам больше нравится) следующую секцию:
 {% raw %}
-```
+```html
 <p>
     {% for tag in site.tags %}
     <!-- Here's a hack to generate a "tag cloud" where the size of
