@@ -114,7 +114,8 @@ SOMENAME - название вашей иконки/соцсети. Вставь
 
 Теперь, чтобы отобразить иконки на страницах блога, нужно отредактировать файл `_includes/svg-icons.html`, добавив в него строки вида:
 
-```
+```html
+<!-- prettier-ignore -->
 {% if site.footer-links.SOMENAME %}<a href="your LINK here/{{ site.footer-links.SOMENAME }}"><i class="svg-icon SOMENAME"></i></a>{% endif %}
 ```
 
@@ -135,7 +136,8 @@ SOMENAME: /yourname
 
 Добавьте в корень репозитория файл archive.html и скопируйте содержимое:
 
-```markdown
+```html
+<!-- prettier-ignore -->
 ---
 layout: page
 title: Archive
@@ -192,6 +194,7 @@ tags: docops jekyll
 Затем нужно вывести теги для каждого поста на странице. Мне нравится выводить их перед текстом, сразу после даты, кому-то больше нравится в конце, после поста. В файл `/_layouts/post.html/` нужно в начало или конец файла добавить секцию с тегами (секция <small> ниже). Я добавила в секцию с отображением даты (прямо перед <div class="entry">):
 
 ```html
+<!-- prettier-ignore -->
 <div class="date">
     Written on {{ page.date | date: "%B %e, %Y" }}
 	<br />
@@ -206,6 +209,7 @@ tags: docops jekyll
 Теперь нужно создать страницы для каждого тега. на каждой страницы будут перечислены все посты с тегом. Создадим файл `_layouts/tagpage.html` и добавим содержимое:
 
 ```html
+<!-- prettier-ignore -->
 ---
 layout: page # This template inherits from my basic page template
 ---
@@ -237,8 +241,8 @@ tag: jekyll
 Готово!
 
 Теперь добавим на главную страницу облако тегов. Для этого отредактируем index.html, добавив в начало или в конец (как вам больше нравится) следующую секцию:
-
-```html
+{% raw %}
+```
 <p>
     {% for tag in site.tags %}
     <!-- Here's a hack to generate a "tag cloud" where the size of
@@ -251,6 +255,7 @@ tag: jekyll
     {% endfor %}
 </p>
 ```
+{% endraw %}
 
 <a id="fixcode" />
 
