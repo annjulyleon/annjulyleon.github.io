@@ -19,6 +19,7 @@ tags: docops
 - <a href="#tags">Добавляем теги и облако тегов</a>
 - <a href="#fixcode">Исправляем баг с подсветкой кода</a>
 - <a href="#git">Ставим git для Windows</a>
+- <a href="#styles">Стили</a>
 - <a href="#plugins">Плагины</a>
 
 <a id="github" />
@@ -288,6 +289,48 @@ tag: jekyll
 ### Стили
 
 В стандартном jekyll-now не очень красивые таблицы. Чтобы это поправить нужно создать свой стиль. jekyll использует как обычный .css, так и продвинутый .scss. Добавим оформление таблиц как на GitHub.
+
+В папке `/_sass` создадим файл `_table.scss` и скопируем туда стили GitHub для таблицы, например [отсюда](https://github.com/sindresorhus/github-markdown-css). Содержимое файла `_table.css`:
+
+```css
+table {
+  padding: 0; }
+  table tr {
+    border-top: 1px solid #cccccc;
+    background-color: white;
+    margin: 0;
+    padding: 0; }
+    table tr:nth-child(2n) {
+      background-color: #f8f8f8; }
+    table tr th {
+      font-weight: bold;
+      border: 1px solid #cccccc;
+      text-align: left;
+      margin: 0;
+      padding: 6px 13px; }
+    table tr td {
+      border: 1px solid #cccccc;
+      text-align: left;
+      margin: 0;
+      padding: 6px 13px; }
+    table tr th :first-child, table tr td :first-child {
+      margin-top: 0; }
+    table tr th :last-child, table tr td :last-child {
+      margin-bottom: 0; }
+
+```
+
+
+
+В файл style.scss в корне репозитория добавим строку в начало или конец файла:
+
+```css
+@import "table";
+```
+
+
+
+Стили на GitHub кэшируются, поэтому обновление стилей может занять до 2-3 ч.
 
 <a id="plugins" />
 
