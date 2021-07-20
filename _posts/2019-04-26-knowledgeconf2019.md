@@ -1,7 +1,12 @@
 ---
-layout: post
 title: KnowledgeConf 2019. Впечатления и отчет
-tags: management
+toc: true
+toc_label: "Содержание"
+tags:
+  - conf
+  - ru
+categories:
+  - conf
 ---
 
 Отчет по докладам с конференции KnowledgeConf 2019 (24.04.2019). 
@@ -12,7 +17,7 @@ tags: management
 **Кому может быть интересно**: тимлидам, HR, project manager, техническому писателю, руководителю технической поддержки, руководителю QA  
 **Инструменты**: [Jive](https://www.jivesoftware.com/) ([старое видео в кроке](https://www.youtube.com/watch?v=a8VEJQN0nQ4)), [Confluence](https://ru.atlassian.com/software/confluence), [Jira](https://ru.atlassian.com/software/jira), [Visual Studio Code](https://code.visualstudio.com/), [Xi](https://github.com/grigoryvp/vscode-language-xi) (синтаксис + расширение для VSC), [Moodle](https://moodle.org/?lang=ru), [Evernote](https://evernote.com/intl/ru), [MarginNote](https://www.marginnote.com/), [Smart Commit](https://confluence.atlassian.com/fisheye/using-smart-commits-960155400.html) (технология)  
 
-## Идеи и что было бы здорово применить
+# Идеи и что было бы здорово применить
 
 Основные направления:
 - **матрица компетенций**  - это важно:
@@ -42,7 +47,7 @@ tags: management
 
 **DISCLAIMER**:  заметки ниже это конспект + идея + личные пояснения (что я поняла и вынесла для себя), могут не соответствовать полностью содержанию доклада
 
-### Доклад 1: Холистическое управление знаниями в IТ-компании
+## Доклад 1: Холистическое управление знаниями в IТ-компании
 
 [Тезисы](https://knowledgeconf.ru/2019/abstracts/4918)&nbsp;|&nbsp;Оценка: 8/10&nbsp;|&nbsp;Компания: КРОК    
 
@@ -121,7 +126,7 @@ tags: management
 - Telegram-бот (задаем вопрос боту а ля "кто такой Иван Иванов", "порядок выхода в отпуск") и Telegram выдает ответ или ссылку на статью в базе знаний;
 - Jira, Confluence, Elasticsearch
 
-### Доклад 2: Применение практик Тиаго Форте для управления своими знаниями
+## Доклад 2: Применение практик Тиаго Форте для управления своими знаниями
 
 [Тезисы](https://knowledgeconf.ru/2019/abstracts/4755)&nbsp;|&nbsp;Оценка: 6/10&nbsp;|&nbsp;[Конспект](https://github.com/docops-hq/conf/blob/master/knowledgeconf/19/tiago-forte-practices.md)&nbsp;|&nbsp;Компания: [Express42](https://express42.com/)
 
@@ -138,7 +143,7 @@ tags: management
 
 
 
-### Доклад 3: Performance Review и выявление тайного знания
+## Доклад 3: Performance Review и выявление тайного знания
 
 [Тезисы](https://knowledgeconf.ru/2019/abstracts/4695)&nbsp;|&nbsp;Оценка: 9/10 
 
@@ -177,7 +182,7 @@ tags: management
 
 Интересно замечание: если к человеку по конкретным задачам вообще только позитивные отзывы, то возможно стоит ему дать задачу посложнее.
 
-### Доклад 4: Разработка базы знаний компании, которой действительно пользуются
+## Доклад 4: Разработка базы знаний компании, которой действительно пользуются
 
 [Тезисы](https://knowledgeconf.ru/2019/abstracts/4815)&nbsp;|&nbsp;Оценка: 9/10  
 
@@ -210,7 +215,7 @@ tags: management
 - предоставлять сотрудникам информацию, которая им действительно нужна;
 - с помощью матрицы компетенций отслеживать наиболее "утекающие" (каких сотрудников нужно искать, нанимать).
 
-### Доклад 5: Как я 15 лет делал себе персональную Wiki для программиста
+## Доклад 5: Как я 15 лет делал себе персональную Wiki для программиста
 
 [Тезисы](https://knowledgeconf.ru/2019/abstracts/4431)&nbsp;|&nbsp;Оценка: 5/10&nbsp;|&nbsp;[Конспект](https://github.com/docops-hq/conf/blob/master/knowledgeconf/19/xi-notes-for-developer.md)
 
@@ -260,7 +265,7 @@ tags: management
 - ставятся задачи на документирование;
 - если есть культура обмена знаниями - то остальными тоже хочется ими поделиться.
 
-### Доклад 7: Не хочешь мокнуть – плыви: добровольно-принудительный обмен знаниями 
+## Доклад 7: Не хочешь мокнуть – плыви: добровольно-принудительный обмен знаниями 
 
 [Тезисы](https://knowledgeconf.ru/2019/abstracts/4956)&nbsp;|&nbsp;Оценка: 7/10 
 
@@ -311,7 +316,7 @@ tags: management
 - горизонтальные переходы между командами сотрудников;
 - кроссфункциональные команды (QA + разработчик в одном лице).
 
-### Доклад 8: Адаптационный чек-лист как инструмент мягкого введения в должность
+## Доклад 8: Адаптационный чек-лист как инструмент мягкого введения в должность
 
 [Тезисы](https://knowledgeconf.ru/2019/abstracts/4941)&nbsp;|&nbsp;Оценка: 5/10
 
@@ -350,7 +355,7 @@ tags: management
 
 Ну и дальше вода вода еще больше воды. Чуть не уснула.
 
-### Доклад 9: Естественное развитие: как перейти от e-learning к управлению знаниями
+## Доклад 9: Естественное развитие: как перейти от e-learning к управлению знаниями
 
 [Тезисы](https://knowledgeconf.ru/2019/abstracts/4816)&nbsp;|&nbsp;Оценка: 6/10&nbsp;|&nbsp;[Конспект](https://github.com/docops-hq/conf/blob/master/knowledgeconf/19/e-learning.md)
 **Что понравилось**: ответы на вопросы, основная идея.

@@ -1,0 +1,11 @@
+main:
+  - title  : "Блог"
+    url    : /posts/
+  - title  : "Обо мне"
+    url    : /about_ru/
+  - title  : "Галерея"
+    url    : /category/gallery/
+  - title  : "EN"
+    url    : /tags/#en
+  - title  : "RU"
+    url    : /tags/#ru

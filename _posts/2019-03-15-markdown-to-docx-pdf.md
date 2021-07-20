@@ -1,35 +1,39 @@
 ---
-layout: post
 title: Markdown в DOCX и PDF с ГОСТ
-tags: docops powershell
+tags:
+  - гост
+  - md
+  - ru
+categories:
+  - docops
 ---
 
-Набор скриптов PowerShell для конвертации Markdown > DOCX и PDF, разработанный и собранный @iaaras ([gitlab](https://gitlab.iaaras.ru/iaaras/gostdown)). 
-
-[GOSTdown](https://gitlab.iaaras.ru/iaaras/gostdown) by @iaaras — набор шаблонов и скриптов для автоматической вёрстки документов по ГОСТ 19.xxx (ЕСПД) и ГОСТ 7.32 (отчёт о научно-исследовательской работе) в форматах docx из файлов текстовой разметки Markdown. 
+Набор скриптов PowerShell для конвертации Markdown > DOCX и PDF, разработанный и собранный @iaaras ([gitlab](https://gitlab.iaaras.ru/iaaras/gostdown)). [GOSTdown](https://gitlab.iaaras.ru/iaaras/gostdown) by @iaaras — набор шаблонов и скриптов для автоматической вёрстки документов по ГОСТ 19.xxx (ЕСПД) и ГОСТ 7.32 (отчёт о научно-исследовательской работе) в форматах docx из файлов текстовой разметки Markdown. 
 
 [Скачать с Gitlab](https://gitlab.iaaras.ru/iaaras/gostdown/-/archive/master/gostdown-master.zip)
 
-Файл gost-r-7-0-5-2008-numeric-iaa.csl распространяется на условиях «Creative Commons Attribution-ShareAlike 3.0 License». Прочие файлы, содержащиеся в репозитории, являются общественным достоянием и могут использоваться, модифицироваться и распространяться без ограничений.
+Файл `gost-r-7-0-5-2008-numeric-iaa.csl` распространяется на условиях «Creative Commons Attribution-ShareAlike 3.0 License». Прочие файлы, содержащиеся в репозитории, являются общественным достоянием и могут использоваться, модифицироваться и распространяться без ограничений.
+
+UPDATE: с последними версиями pandoc выдает ошибки из-за различия в библиотеках.
 
 ### Установка и запуск
 
-Нужно установить [pandoc](https://pandoc.org/installing.html) и расширение [pandoc-crossref](https://github.com/lierdakil/pandoc-crossref/releases). Исполняемый файл pandoc-crossref.exe требуется поместить в одну из директорий, указанных в `PATH`, например в C:\Program Files (x86)\Pandoc.
+Нужно установить [pandoc](https://pandoc.org/installing.html) и расширение [pandoc-crossref](https://github.com/lierdakil/pandoc-crossref/releases). Исполняемый файл `pandoc-crossref.exe` требуется поместить в одну из директорий, указанных в `PATH`, например в `C:\Program Files (x86)\Pandoc`.
 
 Состав:
 
-- build.ps1 — PowerShell-скрипт, который делает следующее: 
+- `build.ps1` — PowerShell-скрипт, который делает следующее: 
   - Вызывает Pandoc для конвертации трёх (или любого другого количества) .md-файлов в формат docx с применением стилей из шаблона в формате docx. 
   - С помощью Word и COM делает постобработку полученного docx: вставляет первые и последние страницы из шаблона, поправляет стили списков, формул, таблиц 
   - Сохраняет результат в форматах docx и PDF
-- . build-demo-report.bat — файл для быстрого запуска build.ps1 со всеми необходимыми параметрами для сборки отчёта по ГОСТ 7.32
-- . build-demo-espd.bat — аналогичный файл для сборки документа по ГОСТ 19
-- . pandoc-demo-report.bat — файл для преобразования отчёта по ГОСТ 7.32 в формат docx без постобработки (используется при необходимости отладки ошибок)
-- . pandoc-demo-espd.bat — аналогичный файл для преобразования документа по
+- `.build-demo-report.bat` — файл для быстрого запуска `build.ps1` со всеми необходимыми параметрами для сборки отчёта по ГОСТ 7.32
+- `.build-demo-espd.bat` — аналогичный файл для сборки документа по ГОСТ 19
+- `.pandoc-demo-report.bat` — файл для преобразования отчёта по ГОСТ 7.32 в формат docx без постобработки (используется при необходимости отладки ошибок)
+- `.pandoc-demo-espd.bat` — аналогичный файл для преобразования документа по
   ГОСТ 19 без постобработки.
-- .gitlab-ci.yml — настройки удалённого запуска сборки по коммиту в GitLab
+- `.gitlab-ci.yml` — настройки удалённого запуска сборки по коммиту в GitLab
 
-Чтобы убедиться, что все настроено правильно, запустите .build-demo-report.bat и .build-demo-espd.bat  и проверьте получившиеся docx и pdf файлы.
+Чтобы убедиться, что все настроено правильно, запустите `.build-demo-report.bat` и `.build-demo-espd.bat`  и проверьте получившиеся docx и pdf файлы.
 
 ### Настройка
 

@@ -1,7 +1,11 @@
 ---
-layout: post
-title: OxygenXML. Стили для ГОСТ
-tags: docops oxygenxml
+title: OxygenXML - стили для ГОСТ
+tags:
+  - гост
+  - dita
+  - ru
+categories:
+  - docops
 ---
 
 Стили ГОСТ ЕСПД для OxygenXML и проект для тестирования стилей.  

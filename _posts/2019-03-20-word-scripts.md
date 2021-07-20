@@ -1,16 +1,14 @@
 ---
-layout: post
-title: Powershell. Скрипты для Word
-tags: docops powershell
+title: Powershell - скрипты для Word
+tags:
+  - гост
+  - word
+  - ru
+categories:
+  - docops
 ---
 
 Несколько PowerShell скриптов для работы с документами Microsoft Word.
-
-Содержание:
-
-[UpdateDocxProps](#updatedocxprops)  
-[DocToPdf](#doctopdf)  
-[FindAndReplace](#fndandreplace)
 
 [Git](https://github.com/annjulyleon/psScriptsForDocs) 
 
@@ -89,5 +87,4 @@ Github: <https://github.com/annjulyleon/psScriptsForDocs
 
 - [Replacing many Words in a .docx File with Powershell](https://stackoverflow.com/questions/40101846/replacing-many-words-in-a-docx-file-with-powershell)
 - [PowerShell script to Find and Replace in Word Document, including Header, Footer and TextBoxes within](https://codereview.stackexchange.com/questions/174455/powershell-script-to-find-and-replace-in-word-document-including-header-footer)
-
 

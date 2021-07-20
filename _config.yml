@@ -1,84 +1,84 @@
-#
-# This file contains configuration flags to customize your site
-#
+title                 : AJL Blog
+email                 : 
+description: >- 
+  Writing docs and stuff.
+baseurl               : ""
+url                   : http://annjulyleon.github.io
+github_username       : annjulyleon
 
-# Name of your site (displayed in the header)
-name: Anna Leonova
+#theme                 : minimal-mistakes-jekyll
+remote_theme          : mmistakes/minimal-mistakes
+minimal_mistakes_skin : default
+search                : true
+words_per_minute      : 150
 
-# Short bio or description (displayed in the header)
-description: Technical writer with a passion for learning
+markdown              : kramdown
+highlighter           : rouge
+permalink             : /:categories/:title/
+paginate              : 5
+paginate_path         : /page:num/
+timezone              : Europe/Moscow
+locale                : "ru-RU"
 
-# URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: https://raw.githubusercontent.com/annjulyleon/annjulyleon.github.io/master/images/jekyll-logo.png
+teaser                : /assets/images/default/teaserfallback.png
+logo                  : /assets/images/default/logo.png
 
-# Includes an icon in the footer for each username you enter
-footer-links:
- #dribbble:
-  email: aj.leonova@gmail.com
-  facebook:
-  telegram: annjulyleon
-  blogger: aljuly
- #flickr:
-  github: /annjulyleon
- #instagram:
-  linkedin: annleonova
- #pinterest:
- #rss: # just type anything here for a working RSS icon
- #twitter: jekyllrb
- #stackoverflow: your stackoverflow profile, e.g. "users/50476/bart-kiers"
- #youtube: # channel/<your_long_string> or user/<user-name>
- #googleplus: # anything in your profile username that comes after plus.google.com/
+include:
+  - _pages
+  
+plugins:
+  - jekyll-feed
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jemoji
+  - jekyll-include-cache
 
+author:
+  name                : "Anna Leonova"
+  avatar              : "/assets/images/default/bio-photo.jpg"
+  bio                 : "That's me!"
+  location            : "Moscow, Russia"
+  links:
+    - label           : "GitHub"
+      icon            : "fab fa-fw fa-github"
+      url             : "https://github.com/annjulyleon"
+    - label           : "LinkedIn"
+      icon            : "fab fa-fw fa-linkedin"
+      url             : "https://www.linkedin.com/in/annleonova/"
 
-# Enter your Disqus shortname (not your username) to enable commenting on posts
-# You can find your shortname on the Settings page of your Disqus account
-#disqus:
+footer:
+  links:
+    - label           : "GH"
+      icon            : "fab fa-fw fa-github"
+      url             : "https://github.com/annjulyleon"
+    - label           : "LI"
+      icon            : "fab fa-fw fa-linkedin"
+      url             : "https://www.linkedin.com/in/annleonova/"
 
-# Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
-#google_analytics:
+encoding              : "utf-8"
+ 
+category_archive:
+  type: liquid
+  path: /categories/
+tag_archive:
+  type: liquid
+  path: /tags/
 
-# Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
-# Used for Sitemap.xml and your RSS feed
-url: http://annjulyleon.github.io
-
-# If you're hosting your site at a Project repository on GitHub pages
-# (http://yourusername.github.io/repository-name)
-# and NOT your User repository (http://yourusername.github.io)
-# then add in the baseurl here, like this: "/repository-name"
-baseurl: ""
-
-#
-# !! You don't need to change any of the configuration flags below !!
-#
-
-permalink: /:title/
-
-# The release of Jekyll Now that you're using
-version: v1.2.0
-
-# Jekyll 3 now only supports Kramdown for Markdown
-kramdown:
-  # Use GitHub flavored markdown, including triple backtick fenced code blocks
-  input: GFM
-  # Jekyll 3 and GitHub Pages now only support rouge for syntax highlighting
-  syntax_highlighter: rouge
-  syntax_highlighter_opts:
-    # Use existing pygments syntax highlighting css
-    css_class: 'highlight'
-
-# Set the Sass partials directory, as we're using @imports
-sass:
-  style: :expanded # You might prefer to minify using :compressed
-
-# Use the following plugins
-gems:
-  - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
-  - jekyll-feed # Create an Atom feed using the official Jekyll feed gem
-
-# Exclude these files from your production _site
-exclude:
-  - Gemfile
-  - Gemfile.lock
-  - LICENSE
-  - README.md
-  - CNAME
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      related: true
+      show_date: true
+  - scope:
+      path: "_pages"
+      type: pages
+    values:
+      layout: single
+      author_profile: true
