@@ -690,12 +690,6 @@ markdown_extensions:
 
 Установка: добавить в список `markdown_extensions` ключ `-pymdownx.snippets`.
 
-Использование:
-
-```yaml title="docs\snippets\example.js"
---8<-- "docs\snippets\example.js"
-```
-
 Пример на рисунке ниже.
 
 ![Пример сниппета](/assets/images/posts/2022-10-25_mkd_plg_snippet.png)
