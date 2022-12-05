@@ -11,7 +11,7 @@ categories:
 ---
 
 Стильный модный молодежный подход DocOps -- разработка документации как кода. 
-Используем несколько инструментов (Gostdown, mkdocs, набор скриптов, макросов и задач VSCode) для автоматизации всего, чего можно. Демонстрационный репозиторий: https://github.com/annjulyleon/demo-gostdown.
+Используем несколько инструментов (Gostdown, mkdocs, набор скриптов, макросов и задач VSCode) для автоматизации всего, чего можно. Демонстрационный репозиторий: [https://github.com/annjulyleon/demo-gostdown](https://github.com/annjulyleon/demo-gostdown).
 
 # DocOps из костылей и палок
 
