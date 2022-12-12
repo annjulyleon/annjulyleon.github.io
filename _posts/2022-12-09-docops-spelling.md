@@ -52,7 +52,8 @@ categories:
 1. Создать рабочую директорию.
 2. [Загрузить n-граммы](https://languagetool.org/download/ngram-data/untested/) и распаковать в рабочую директорию. N-граммы должны лежать по пути вида `ngrams/ru` (`ngrams/ru/1grams` и т.д.).
 3. Создать `Dockerfile`:
-  ```text
+
+```text
   FROM alpine as ftbuild
   
   RUN apk update && apk add \
@@ -83,8 +84,9 @@ categories:
   ENV langtool_fasttextBinary=/LanguageTool/fasttext
   ENV langtool_ngramLangIdentData=/LanguageTool/model_ml50_new.zip
   ENV langtool_fasttextModel=/LanguageTool/lid.176.bin
-  ```
-4. Запустить docker командой:
+```
+  
+Запустить docker командой:
 
 ```text
 docker run -d --name="Languagetool" -p 8081:8010/tcp -e langtool_languageModel=/ngrams -v /ngrams:/ngrams --restart=unless-stopped docker-languagetool-fasttext
@@ -191,7 +193,8 @@ _Но я же технический писатель с большим опыт
 2. В ключе `BasedOnStyles` указан список стилей (правил), которые Vale будет использовать при проверке. Можно указать одновременно несколько стилей через запятую.
 3. В ключе `StylesPath` указан путь к папке со стилями. Это может быть относительный путь (например, `styles`) или абсолютный (например, `D:\Library\vale\styles`).
 4. Создать по крайней мере один стиль со стилевым файлом. Например, `styles/InforionGost/Repetition.yml`. Это правило будет отслеживать повторяющиеся слова.
-  ```yml
+
+```yml
   extends: repetition
   message: "'%s' повторяется!"
   level: warning
@@ -203,9 +206,10 @@ _Но я же технический писатель с большим опыт
       - " "
   tokens:
     - '[^\s]+'
-  ```
-5. Правило будет сразу же применено при следующем сохранении документа.
-6. Документация по составлению правил: [https://vale.sh/docs/topics/scoping/](https://vale.sh/docs/topics/scoping/). В правилах можно использовать регулярные выражения. Так как Vale работает на Go, то для тестирования regex выражений, например, в [https://regex101.com/](https://regex101.com/) нужно выбирать режим Golang.
+```
+
+Правило будет сразу же применено при следующем сохранении документа.
+Документация по составлению правил: [https://vale.sh/docs/topics/scoping/](https://vale.sh/docs/topics/scoping/). В правилах можно использовать регулярные выражения. Так как Vale работает на Go, то для тестирования regex выражений, например, в [https://regex101.com/](https://regex101.com/) нужно выбирать режим Golang.
 
 Если вы пишете на английском, то для вас уже существует множество стилевых файлов от разных компаний, включая Microsoft. В этих же файлах представлены примеры реализации разных проверок, некоторые можно адаптировать для русского языка.
 Несколько стилей уже входит в [демонстрационный проект Vale](https://github.com/errata-ai/vale-boilerplate), другие можно скачать дополнительно:
