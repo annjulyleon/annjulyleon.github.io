@@ -4,7 +4,7 @@ Copied from: [mmistakes/mm-github-pages-starter](https://github.com/mmistakes/mm
 
 # Changes: 
 
-- added per page cutom css and js
+- added per page custom css and js
 - excluded gallery category from rendering on home page
 - added tiny side menu under author profile
 
