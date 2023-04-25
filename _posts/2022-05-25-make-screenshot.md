@@ -17,20 +17,20 @@ The more I learn about test automation (my new work-hobby :) the more automation
 
 Install **shot-scrapper** using pip:
 
-```
+```bash
 pip install shot-scrapper
 shot-scrapper install
 ```
 
 Take a screenshot with the command:
 
-```
+```bash
 shot-scraper https://demoqa.com/text-box
 ```
 
 Done! A .png file will be created in the current directory. By default, the screenshot is taken with 1280x800 browser window size, but you can change this: 
 
-```
+```bash
 shot-scraper https://demoqa.com/text-box --width 1650 --height 1080 -o newsize.png
 ```
 
@@ -40,7 +40,7 @@ Result:
 
 You can take a screenshot of the specific element with `--selector` or `-s` argument:
 
-```
+```bash
 shot-scraper https://demoqa.com/text-box -s '#userForm' --padding 2
 ```
 
@@ -70,7 +70,7 @@ The scenario will take screenshots of two web pages and saves them with `output`
 
 Let's take a look at the another example. On the page https://demoqa.com/checkbox there is a checkbox node tree which is collapsed by default. We need expand all nodes and select the `React` option:
 
-1. Click each element with `rct-collapse-btn ` selector. 
+1. Click each element with `rct-collapse-btn` selector. 
 2. Click element with `tree-node-react` id.
 
 Code:
@@ -102,4 +102,3 @@ Result:
 There are some unresolved issues, like you can't JavaScript around the `hover` action (at least my JavaScript-fu wasn't good enough). That means you can't take screenshots for "on hover" elements (like dropdown menu). 
 
 See more amazing examples on https://simonwillison.net/tags/shotscraper/.
-
